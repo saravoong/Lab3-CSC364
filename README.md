@@ -20,6 +20,6 @@ To run this lab:
 2) Click on the _Execute Maven Goal_ icon 
 3) Click **clean** and enter
 4) Click **install** and enter
-5) Run: **hadoop jar target/Lab3-1.0-SNAPSHOT.jar org.example.Lab3 /lab3_input/dataset.csv /lab3_output** inside the project terminal (i.e. inside of IntelliJ). Make sure the pathways match your local project, mines might be different.
+5) Run: **hadoop jar target/Lab3-1.0-SNAPSHOT.jar org.example.Lab3 /lab3_input/dataset.csv /lab3_output/counts /lab3_output/topk 10** inside the project terminal (i.e. inside of IntelliJ). Make sure the pathways match your local project, mines might be different.
 6) Wait until the map and reduce jobs are done, then check the output in Hadoop (i.e. check part_00000)
-7) If you ever need to restart, you can delete the output file (**hdfs dfs -rm -r /lab3_output**), maven clean, maven install, then run #5 again 
+7) If you ever need to restart, you can delete the output files (**hdfs dfs -rm -r -f /lab3_output/counts /lab3_output/topk**), maven clean, maven install, then run #5 again 
