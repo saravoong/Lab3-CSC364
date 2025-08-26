@@ -64,8 +64,8 @@ public class Lab3 {
                 return;
             }
 
-            double latBin = Math.round(lat * 100.0) / 100.0;
-            double lonBin = Math.round(lon * 100.0) / 100.0;
+            double latBin = Math.round(lat * 1000.0) / 1000.0;
+            double lonBin = Math.round(lon * 1000.0) / 1000.0;
 
             coord.set(latBin + "," + lonBin);
             context.write(coord, one);
